@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>UAV Map</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body style="margin:0px; padding:0px;" onload="init()">
+    <div id="heading_overlay">
+        <p>UAV Dashboard</p>
+    </div>
+    <div id="overlay">
+        <div id="overlay_data">
+            UAV METADATA<br>
+            Speed: 0 km/h<br>
+            Delta Theta: 0° <br>
+            Target Distance: 0 m<br>
+            Satellite Count: 0<br>
+        </div>
+    </div>
+    </div>
+    <div id="right_overlay">
+        <div id="right_overlay_data">
+            UAV INFORMATION<br>
+            Latitude: <br>
+            0.0 <br>
+            Longitude: <br>
+            0.0 <br>
+        </div>
+        <canvas id="chart_canvas" width="200" height="200"></canvas>
+    </div>
+    <div id="compass_overlay">
+        <img src="/Compass.svg" width="200" height="200" />
+        <img id="pointer"
+            src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-Navigation-round-icons-others-inmotus-design-11.png" />
+    </div>
+    <div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+
+</html>
